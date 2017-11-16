@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   function displayRestaurants () {
     $('.restaurant-display').empty()
 
@@ -38,3 +39,4 @@ $(document).ready(function () {
   }
   displayRestaurants()
 })
+
