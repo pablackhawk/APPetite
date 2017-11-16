@@ -1,15 +1,16 @@
 $(document).ready(function () {
-var settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "https://api.postmates.com/v1/delivery_zones",
-  "method": "GET",
-  "headers": {
-    "authorization": "Basic ZWZmY2RhOTItZWNjMy00ZGI2LWI5NTQtZjhkOTE0ZTA5NGQ5Og==",
-    "cache-control": "no-cache",
-  }
-}
 
-$.ajax(settings).done(function (response) {
-  console.log(response);
-});
+	var queryaddress = '11090+Santa+Monica+Blvd+Los+Angeles+CA,+90025'
+
+	var queryURL = 'https://api.eatstreet.com/publicapi/v1/restaurant/search-test?method=both&street-address='
+					+ queryaddress + '&access-token=e4d79c106ba7c4b2'
+	
+	$.ajax({
+		url: queryURL,
+		method: 'GET'
+	}).done(function (response) {
+		console.log(response)
+		var results = response.data
+	})
+})
+
