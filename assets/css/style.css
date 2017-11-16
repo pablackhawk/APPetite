@@ -10,7 +10,7 @@ header {
 	background-color: black;
 }
 
-#logo {
+.logo {
 	font-family: 'Lobster';
 	color: white;
 	margin-left: 100px;
@@ -62,3 +62,7 @@ footer {
 	background-size: 30%;
 	font-size: 9px;
 }
+
+
+
+
