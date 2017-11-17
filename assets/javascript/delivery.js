@@ -28,6 +28,7 @@ $(document).ready(function () {
         var restaurantZip = results[i].zip
         var restaurantType = results[i].foodTypes[i]
         var p2 = $('<p>').text(restaurantAddress + ', ' + restaurantCity + ', ' + restaurantState + ', ' + restaurantZip)
+        var p3 = $('<p>').text(restaurantType)
         restaurantDiv.append(p1)
         restaurantDiv.prepend(restaurantLogo)
       }
