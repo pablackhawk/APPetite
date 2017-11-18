@@ -425,4 +425,16 @@ footer {
 	margin-bottom: 20px;
 }
 
-
+.restaurant-logo {
+  float: left;
+  height: 107px;
+  opacity: 1;
+}
+.restaurant {
+  background: rgba(211, 211, 211, 0.7);  
+  clear: both;
+  font-family: 'Lobster';  
+  color: white;
+  text-shadow: 1px 1px 2px #0a0a0a;
+  
+}
