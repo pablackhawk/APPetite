@@ -1,9 +1,21 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background-image: url("../images/plates.jpeg");
 	height: 100%; 
 	background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+	background-size: cover;
+	font-family: 'Lobster';
+}
+
+#dine-in-background {
+	background-image: url("../images/cuttingboard.jpeg");
+	width: 100%; 
+	background-position: center;
+	background-repeat: repeat-y;
 }
 
 header {
@@ -53,6 +65,34 @@ header {
 	background-color: white;
 	opacity: 0.6;
 	color: black;
+}
+
+.input-group {
+	font-family: 'Lobster';
+	color: white;
+
+}
+
+.restaurant-display{
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.restaurant-logo {
+	float: left;
+	height: 95px;
+	width: 95px;
+	margin: auto;
+}
+.restaurant {
+	background: slategray;
+	height: 100%;
+	margin: 4px;
+	padding: 5px;
+	clear: both;
+	font-family: 'Lobster';
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	
 }
 
 footer {
