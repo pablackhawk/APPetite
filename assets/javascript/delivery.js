@@ -1,10 +1,10 @@
 $(document).ready(function () {
   // Pulls restaurant data
-  $('#submitZipcode').on('click', function displayRestaurants (event) {
+  $('#submitZipcode').on('click', function (event) {
     event.preventDefault()
     $('.restaurant-display').empty()
-    var queryAddress = $('#zipcodeInput').val().trim()
-    // var queryAddress = '54+E+Peltason+Dr,+Irvine,+CA+92617'
+    // var queryAddress = $('#zipcodeInput').val().trim()
+    var queryAddress = '54+E+Peltason+Dr,+Irvine,+CA+92617'
     var queryURL = 'https://api.eatstreet.com/publicapi/v1/restaurant/search?method=delivery&street-address=' +
     queryAddress + '&access-token=e4d79c106ba7c4b2'
     $('.restaurant-display').append('Showing results for: ' + queryAddress)
