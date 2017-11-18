@@ -6,12 +6,12 @@ $(document).ready(function(){
             .then((resp) => resp.json())
             .then(function(data) {
                 console.log(data);
-                $("#test").text(JSON.stringify(data));
+                $("#mobile-url").text(JSON.stringify(data));
             });
        }
 
-       $("#submitZipcode").on("click", function(){
-           var zipCode = $("#zipcodeInput").val().trim()
+       $("#submit-zipcode").on("click", function(){
+           var zipCode = $("#zipcode-input").val().trim()
            getData(zipCode);
        })
 
