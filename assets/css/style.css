@@ -1,8 +1,22 @@
+
+* {
+	box-sizing: border-box;
+}
+
 .background-image {
 	background-image: url("../images/plates.jpeg");
 	height: 100%; 
 	background-position: center;
     background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Lobster';
+}
+
+#dine-in-background {
+	background-image: url("../images/cuttingboard.jpeg");
+	width: 100%; 
+	background-position: center;
+	background-repeat: repeat-y;
     background-size: cover;
     background-color: black;
    background-attachment: fixed;
@@ -57,11 +71,39 @@ header {
 	color: black;
 }
 
+.input-group {
+	font-family: 'Lobster';
+	color: white;
+
+}
+
+.restaurant-display{
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.restaurant-logo {
+	float: left;
+	height: 95px;
+	width: 95px;
+	margin: auto;
+}
+.restaurant {
+	background: slategray;
+	height: 100%;
+	margin: 4px;
+	padding: 5px;
+	clear: both;
+	font-family: 'Lobster';
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
 #team-header {
 	font-family: 'Lobster';
 	text-align: center;
 	color: white;
 	margin-top: 50px;
+
 }
 
 footer {
@@ -424,5 +466,3 @@ footer {
 	font-family: 'Lobster';
 	margin-bottom: 20px;
 }
-
-
