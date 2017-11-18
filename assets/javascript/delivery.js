@@ -29,6 +29,7 @@ $(document).ready(function () {
         var restaurantCity = results[i].city
         var restaurantState = results[i].state
         var restaurantZip = results[i].zip
+        //figure out how to display hours
         var restaurantType = results[i].foodTypes
         var p2 = $('<p>').text(restaurantAddress + ', ' + restaurantCity + ', ' + restaurantState + ', ' + restaurantZip)
         var p3 = $('<p>').text(restaurantType)
@@ -36,6 +37,7 @@ $(document).ready(function () {
         restaurantDiv.prepend(restaurantLogo)
         restaurantDiv.append(p2)
         restaurantDiv.append(p3)
+        //append hours here
         $('.restaurant-display').append(restaurantDiv)
         $('#user-address').val('')
       }
