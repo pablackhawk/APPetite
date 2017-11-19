@@ -16,20 +16,20 @@ $(document).ready(function(){
                 var address = data.restaurants[i].address;
                 var city = data.restaurants[i].city;
                 var state = data.restaurants[i].state;
+                var zip = data.restaurants[i].postal_code;
                 var phone = data.restaurants[i].phone;
                 var reservationLink = data.restaurants[i].mobile_reserve_url; 
-                var p = $("<p>")          
+                var locationInfo = $("<p>").html(name + '<br>' + address + '<br>' + city + ', ' + state + ', ' + zip);
+                var reservationButton = $("<button>");        
 
                 console.log(restaurantsDiv);
                 picContainer.attr("src", photo);
-                // photo.attr(height:100px; width: 100px)
                 restaurantsDiv.append(picContainer);
-                restaurantsDiv.append(p);
-                p.append(address);
-                p.append(city);
-                p.append(state);
-                p.append(phone);
-                p.append(reservationLink);
+                restaurantsDiv.append(locationInfo);
+                reservationButton.attr("src", reservationLink);
+                reservationButton.text("Reserve a Table Now");
+                restaurantsDiv.append(reservationButton);
+
 
                 $("#resturant-options").prepend(restaurantsDiv);
 
