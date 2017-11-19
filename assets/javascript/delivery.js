@@ -21,6 +21,7 @@ $(document).ready(function () {
       for (var i = 0; i < results.length; i++) {
         var restaurantDiv = $('<div class="auto cell restaurant">')
         var restaurantName = results[i].name
+        restaurantDiv.attr('data-apiKey', results[i].apiKey)
         var p1 = $('<p>').text(restaurantName)
         var restaurantLogo = $('<img>')
         restaurantLogo.attr('src', results[i].logoUrl)
@@ -30,14 +31,26 @@ $(document).ready(function () {
         var restaurantState = results[i].state
         var restaurantZip = results[i].zip
         //figure out how to display hours
+        var restaurantHours = results[i].hours
+        restaurantHours.toString()
+        console.log('-----------')
+        console.log(restaurantHours)
+        var hours = []
+        hours.push(restaurantHours)
+        console.log('-----------')
+        console.log(hours)
         var restaurantType = results[i].foodTypes
         var p2 = $('<p>').text(restaurantAddress + ', ' + restaurantCity + ', ' + restaurantState + ', ' + restaurantZip)
         var p3 = $('<p>').text(restaurantType)
+        for (var j = 0; j < hours.length; j++) {
+          var p4 = $('<p>').text(hours[j])
+        }
         restaurantDiv.append(p1)
         restaurantDiv.prepend(restaurantLogo)
         restaurantDiv.append(p2)
         restaurantDiv.append(p3)
         //append hours here
+        restaurantDiv.append(p4)
         $('.restaurant-display').append(restaurantDiv)
         $('#user-address').val('')
       }
