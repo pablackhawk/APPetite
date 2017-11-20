@@ -1,1 +1,3 @@
-# project1fall2017
+# APPetite: Feeling hungry but feeling lazy?
+
+APPetite is here to help you get food with ease!
