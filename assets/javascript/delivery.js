@@ -2,11 +2,11 @@ $(document).ready(function () {
   // Pulls restaurant data
   $('#submit-address').on('click', function restaurantResults (event) {
     event.preventDefault()
-    $('.restaurant-display').empty()
+    $('.restaurant-options').empty()
     var queryAddress = $('#address-input').val().trim()
     // var queryAddress = '54+E+Peltason+Dr,+Irvine,+CA+92617' // Test address
     if (queryAddress === '') {
-      $('.restaurant-display').html('<h4 class="error">Please input an address</h4>')
+      $('.restaurant-options').html('<h4 class="error">Please input an address</h4>')
     } else {
       var queryURL = 'https://api.eatstreet.com/publicapi/v1/restaurant/search?method=delivery&street-address=' +
         queryAddress + '&access-token=e4d79c106ba7c4b2'
@@ -17,9 +17,9 @@ $(document).ready(function () {
         console.log(response)
         var results = response.restaurants
         if (results < 1) {
-          $('.restaurant-display').html('<h5>No restaurants in range. Sorry!</h5>')
+          $('.restaurant-options').html('<h5>No restaurants in range. Sorry!</h5>')
         } else {
-          $('.restaurant-display').append('Showing results for: ' + queryAddress)
+          $('.restaurant-options').append('Showing results for: ' + queryAddress)
         }
         // Runs through response array
         for (var i = 0; i < results.length; i++) {
@@ -33,7 +33,7 @@ $(document).ready(function () {
             // Pulls image for logo
             var restaurantLogo = $('<img class="restaurant-logo">')
             restaurantLogo.attr('src', results[i].logoUrl)
-            // Pulls address for display
+            // Pulls address for restaurant
             var restaurantAddress = results[i].streetAddress
             var restaurantCity = results[i].city
             var restaurantState = results[i].state
@@ -92,7 +92,7 @@ $(document).ready(function () {
             restaurantDiv.append(phoneNumber)
             restaurantDiv.append(p2)
             restaurantDiv.append(p3)
-            $('.restaurant-display').append(restaurantDiv)
+            $('.restaurant-options').append(restaurantDiv)
             $('#address-input').val('')
           }
         }
