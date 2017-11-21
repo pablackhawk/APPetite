@@ -20,13 +20,13 @@ $(document).ready(function(){
                 var phone = data.restaurants[i].phone;
                 var reservationLink = data.restaurants[i].mobile_reserve_url; 
                 var locationInfo = $("<p>").html(name + '<br>' + address + '<br>' + city + ', ' + state + ', ' + zip);
-                var reservationButton = $("<button>");        
-
+                var reservationButton = $('<a class="button secondary order-button">').text('Reserve a Table');
+                
                 console.log(restaurantsDiv);
                 picContainer.attr("src", photo);
                 restaurantsDiv.append(picContainer);
                 restaurantsDiv.append(locationInfo);
-                reservationButton.attr("src", reservationLink);
+                reservationButton.attr("href", reservationLink);
                 reservationButton.text("Reserve a Table Now");
                 restaurantsDiv.append(reservationButton);
 
