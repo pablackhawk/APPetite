@@ -28,7 +28,7 @@ $(document).ready(function () {
           reservationButton.text('Reserve a Table Now')
           restaurantsDiv.append(reservationButton)
 
-          $('#restaurant-options').prepend(restaurantsDiv)
+          $('.restaurant-options').prepend(restaurantsDiv)
         }
       })
   }
