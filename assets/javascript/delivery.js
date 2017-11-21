@@ -38,7 +38,7 @@ $(document).ready(function () {
             var restaurantCity = results[i].city
             var restaurantState = results[i].state
             var restaurantZip = results[i].zip
-            // figure out how to display hours
+            // Pulls restaurant business hours
             var restaurantHours = results[i].hours
             var hoursM = restaurantHours.Monday
             if (hoursM === undefined) {
@@ -69,25 +69,6 @@ $(document).ready(function () {
               hoursSu = 'Closed'
             }
             var p4 = $('<p class="restaurant-hours">').html('<ul style="list-style: none;"><li>Monday: ' + hoursM + '</li><li>Tuesday: ' + hoursT + '</li><li>Wednesday: ' + hoursW + '</li><li>Thursday: ' + hoursTh + '</li><li>Friday: ' + hoursF + '</li><li>Saturday: ' + hoursSa + '</li><li>Sunday: ' + hoursSu + '</li></ul>')
-            // var businessHours = []
-            // for (var key in restaurantHours) {
-            //   var hours = restaurantHours[key]
-            //   console.log(key)
-            //   console.log(hours)
-            //   console.log('---------')
-            //   if (hours !== null) {
-            //     businessHours.push(hours)
-            //     console.log(businessHours)
-            //   }
-            // }
-            // var p4 = $('<p>').text(businessHours)
-            // restaurantHours.toString()
-            // console.log('-----------')
-            // console.log(restaurantHours)
-            // var hours = []
-            // hours.push(restaurantHours)
-            // console.log('-----------')
-            // console.log(hours)
             var deliveryMin = parseFloat(results[i].deliveryMin)
             var deliveryFee = parseFloat(results[i].deliveryPrice)
             var minWait = results[i].minWaitTime
@@ -99,9 +80,6 @@ $(document).ready(function () {
             var restaurantType = results[i].foodTypes
             var p2 = $('<p>').text(restaurantAddress + ', ' + restaurantCity + ', ' + restaurantState + ', ' + restaurantZip)
             var p3 = $('<p>').text(restaurantType)
-            // for (var j = 0; j < hours.length; j++) {
-            //   var p4 = $('<p>').text(hours[j])
-            // }
             var deliveryDetails = $('<p>').text('Delivery Minimum: $' + deliveryMin + ', ' + 'Delivery Fee: $' + deliveryFee)
             var restaurantContact = results[i].phone
             var phoneNumber = $('<p>').text(restaurantContact)
@@ -114,8 +92,6 @@ $(document).ready(function () {
             restaurantDiv.append(phoneNumber)
             restaurantDiv.append(p2)
             restaurantDiv.append(p3)
-            // append hours here
-            
             $('.restaurant-display').append(restaurantDiv)
             $('#address-input').val('')
           }
