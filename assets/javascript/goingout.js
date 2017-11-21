@@ -19,7 +19,7 @@ $(document).ready(function(){
                 var zip = data.restaurants[i].postal_code;
                 var phone = data.restaurants[i].phone;
                 var reservationLink = data.restaurants[i].mobile_reserve_url; 
-                var locationInfo = $("<p>").html(name + '<br>' + address + '<br>' + city + ', ' + state + ', ' + zip);
+                var locationInfo = $("<p>").html(name + '<br>' + address + '<br>' + city + ', ' + state + ', ' + zip + '<br>' + phone);
                 var reservationButton = $("<button>");        
 
                 console.log(restaurantsDiv);
