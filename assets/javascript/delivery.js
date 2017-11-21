@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Pulls restaurant data
-  $('#submit-address').on('click', function restaurantResults(event) {
+  $('#submit-address').on('click', function restaurantResults (event) {
     event.preventDefault()
     $('.restaurant-display').empty()
     var queryAddress = $('#address-input').val().trim()
@@ -25,7 +25,7 @@ $(document).ready(function () {
         for (var i = 0; i < results.length; i++) {
           if (results[i].open === true) {
             // Creates container for restaurants
-            var restaurantDiv = $('<div class="small-12 columns restaurant">')
+            var restaurantDiv = $('<div data-aos ="flip-left" class="small-12 columns restaurant">')
             var restaurantName = results[i].name
             restaurantDiv.attr('data-apiKey', results[i].apiKey)
             // console.log(restaurantDiv)
