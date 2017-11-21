@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Pulls restaurant data
-  $('#submit-address').on('click', function restaurantResults (event) {
+  $('#submit-address').on('click', function restaurantResults(event) {
     event.preventDefault()
     $('.restaurant-display').empty()
     var queryAddress = $('#address-input').val().trim()
@@ -9,7 +9,7 @@ $(document).ready(function () {
       $('.restaurant-display').html('<h4 class="error">Please input an address</h4>')
     } else {
       var queryURL = 'https://api.eatstreet.com/publicapi/v1/restaurant/search?method=delivery&street-address=' +
-      queryAddress + '&access-token=e4d79c106ba7c4b2'
+        queryAddress + '&access-token=e4d79c106ba7c4b2'
       $.ajax({
         url: queryURL,
         method: 'GET'
@@ -28,19 +28,59 @@ $(document).ready(function () {
             var restaurantDiv = $('<div class="small-12 columns restaurant">')
             var restaurantName = results[i].name
             restaurantDiv.attr('data-apiKey', results[i].apiKey)
-            console.log(restaurantDiv)
+            // console.log(restaurantDiv)
             var p1 = $('<p>').text(restaurantName)
             // Pulls image for logo
-            var restaurantLogo = $('<img>')
+            var restaurantLogo = $('<img class="restaurant-logo">')
             restaurantLogo.attr('src', results[i].logoUrl)
-            restaurantLogo.attr('class', 'restaurant-logo')
             // Pulls address for display
             var restaurantAddress = results[i].streetAddress
             var restaurantCity = results[i].city
             var restaurantState = results[i].state
             var restaurantZip = results[i].zip
             // figure out how to display hours
-            // var restaurantHours = results[i].hours
+            var restaurantHours = results[i].hours
+            var hoursM = restaurantHours.Monday
+            if (hoursM === undefined) {
+              hoursM = 'Closed'
+            }
+            var hoursT = restaurantHours.Tuesday
+            if (hoursT === undefined) {
+              hoursT = 'Closed'
+            }
+            var hoursW = restaurantHours.Wednesday
+            if (hoursW === undefined) {
+              hoursW = 'Closed'
+            }
+            var hoursTh = restaurantHours.Thursday
+            if (hoursTh === undefined) {
+              hoursTh = 'Closed'
+            }
+            var hoursF = restaurantHours.Friday
+            if (hoursF === undefined) {
+              hoursF = 'Closed'
+            }
+            var hoursSa = restaurantHours.Saturday
+            if (hoursSa === undefined) {
+              hoursSa = 'Closed'
+            }
+            var hoursSu = restaurantHours.Sunday
+            if (hoursSu === undefined) {
+              hoursSu = 'Closed'
+            }
+            var p4 = $('<p class="restaurant-hours">').html('<ul style="list-style: none;"><li>Monday: ' + hoursM + '</li><li>Tuesday: ' + hoursT + '</li><li>Wednesday: ' + hoursW + '</li><li>Thursday: ' + hoursTh + '</li><li>Friday: ' + hoursF + '</li><li>Saturday: ' + hoursSa + '</li><li>Sunday: ' + hoursSu + '</li></ul>')
+            // var businessHours = []
+            // for (var key in restaurantHours) {
+            //   var hours = restaurantHours[key]
+            //   console.log(key)
+            //   console.log(hours)
+            //   console.log('---------')
+            //   if (hours !== null) {
+            //     businessHours.push(hours)
+            //     console.log(businessHours)
+            //   }
+            // }
+            // var p4 = $('<p>').text(businessHours)
             // restaurantHours.toString()
             // console.log('-----------')
             // console.log(restaurantHours)
@@ -66,6 +106,7 @@ $(document).ready(function () {
             var restaurantContact = results[i].phone
             var phoneNumber = $('<p>').text(restaurantContact)
             restaurantDiv.append(orderButton)
+            restaurantDiv.append(p4)
             restaurantDiv.append(p1)
             restaurantDiv.prepend(restaurantLogo)
             restaurantDiv.append(deliveryDetails)
@@ -74,7 +115,7 @@ $(document).ready(function () {
             restaurantDiv.append(p2)
             restaurantDiv.append(p3)
             // append hours here
-            // restaurantDiv.append(p4)
+            
             $('.restaurant-display').append(restaurantDiv)
             $('#address-input').val('')
           }
