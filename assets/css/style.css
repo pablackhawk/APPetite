@@ -426,7 +426,7 @@ footer {
 }
 
 
-#restaurant-options {
+.restaurant-options {
 	background-color: rgba(54, 54, 54, 0.8);
 	font-family: 'Lobster';
   	text-align: center;

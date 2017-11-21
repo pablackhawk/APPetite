@@ -31,7 +31,7 @@ $(document).ready(function(){
                 restaurantsDiv.append(reservationButton);
 
 
-                $("#restaurant-options").prepend(restaurantsDiv);
+                $(".restaurant-options").prepend(restaurantsDiv);
 
                 }
             });
