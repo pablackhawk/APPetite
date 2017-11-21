@@ -425,13 +425,12 @@ footer {
 	margin-bottom: 20px;
 }
 
+.restaurant-logo {
+  float: left;
+  height: 110px;
+  opacity: 1;
+  margin: 3.5% 2%;
 
-.restaurant-options {
-	background-color: rgba(54, 54, 54, 0.8);
-	font-family: 'Lobster';
-  	text-align: center;
-  	color: #fefefe;
-  	margin-top: 80px;
 }
 
 .restaurant {
@@ -444,15 +443,19 @@ footer {
   
 }
 
-.restaurant-logo {
-  float: left;
-  height: 110px;
-  opacity: 1;
-  margin: 3.5% 2%;
-
+.restaurant-options {
+	background-color: rgba(54, 54, 54, 0.8);
+	font-family: 'Lobster';
+  	text-align: center;
+  	color: #fefefe;
+  	margin-top: 80px;
 }
 
 .order-button {
   float: right;
   margin-top: 20px;
+}
+
+.restaurant-hours {
+  float: right;
 }
