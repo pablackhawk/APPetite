@@ -3,13 +3,14 @@
 <head>
 	<title>APPetite</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Source+Sans+Pro" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">
 </head>
 <body class="background-image">
 	<header>
 		<div>
-			<h2 class="logo">APPetite</h2>
+			<a href="index.html"><h2 class="logo">APPetite</h2></a>
 		</div>
 	</header>
 	<div class="curtain-menu-button" data-curtain-menu-button>
@@ -28,7 +29,6 @@
 				<li><a href="about.html">About</a></li>
 				<li><a href="dineout.html">Dine Out</a></li>
 				<li><a href="orderin.html">Order In</a></li>
-				<li><a href="#">Contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -46,15 +46,19 @@
 				</button>
 			</form>
 		</div>
-		<div class="row columns" id="resturant-options" style="color:white; background-color:grey; margin-top: 30px">
+			<div class="row columns" id="restaurant-options">
 			
-		</div>
+			</div>
 	</div>
 	<footer>
 		<p>Ryan, Laurentius, Brendan &copy; 2017</p>
 	</footer>
 	<script src="https://code.jquery.com/jquery.js"></script> 
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 	<script type="text/javascript" src="assets/javascript/goingout.js"></script>
+	 <script>
+    AOS.init();
+  	</script>
 </body>
 </html>
