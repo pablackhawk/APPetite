@@ -433,3 +433,26 @@ footer {
   	color: #fefefe;
   	margin-top: 80px;
 }
+
+.restaurant {
+  background: rgba(211, 211, 211, 0.7);  
+  clear: both;
+  font-family: 'Lobster';  
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+  margin: 10px 0;
+  
+}
+
+.restaurant-logo {
+  float: left;
+  height: 110px;
+  opacity: 1;
+  margin: 3.5% 2%;
+
+}
+
+.order-button {
+  float: right;
+  margin-top: 20px;
+}
