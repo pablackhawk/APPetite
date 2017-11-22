@@ -18,6 +18,7 @@ header {
 	color: white;
 	margin-left: 70px;
 	padding: 5px;
+	width: 30%;
 }
 
 .container {
@@ -34,7 +35,7 @@ header {
 
 #title-question {
 	font-family: 'Source Sans Pro';
-	font-size: 16px;
+	font-size: 20px;
 	margin-bottom: 30px;
 	color: white;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -62,6 +63,7 @@ header {
 	text-align: center;
 	color: white;
 	margin-top: 50px;
+	background-color: rgba(54, 54, 54, 0.8);
 }
 
 footer {
@@ -400,7 +402,7 @@ footer {
 
 
 .hero-section {
-  background: url("https://static.pexels.com/photos/390403/pexels-photo-390403.jpeg") 50% no-repeat;
+  background: url("https://static.pexels.com/photos/5317/food-salad-restaurant-person.jpg") 50% no-repeat;
   background-size: cover;
   height: 500px;
   text-align: center;
@@ -418,6 +420,8 @@ footer {
 .hero-section .hero-section-text {
   color: #fefefe;
   text-shadow: 1px 1px 2px #0a0a0a;
+  background-color: rgba(54, 54, 54, 0.8);
+  padding: 30px;
 }
 
 #about-title {
@@ -430,7 +434,6 @@ footer {
   height: 110px;
   opacity: 1;
   margin: 3.5% 2%;
-
 }
 
 .restaurant {
@@ -455,6 +458,7 @@ footer {
   float: right;
   margin-top: 20px;
 }
+
 
 .restaurant-hours {
   float: right;
