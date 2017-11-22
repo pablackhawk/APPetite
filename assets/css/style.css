@@ -434,8 +434,8 @@ footer {
   height: 110px;
   opacity: 1;
   margin: 3.5% 2%;
-
 }
+
 .restaurant {
   background: rgba(211, 211, 211, 0.7);  
   clear: both;
@@ -458,6 +458,8 @@ footer {
   float: right;
   margin-top: 20px;
 }
+
+
 .restaurant-hours {
   float: right;
 }
