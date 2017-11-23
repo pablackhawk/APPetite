@@ -31,7 +31,7 @@ $(document).ready(function () {
             // console.log(restaurantDiv)
             var p1 = $('<p>').text(restaurantName)
             // Pulls image for logo
-            var restaurantLogo = $('<img class="restaurant-logo">')
+            var restaurantLogo = $('<img class="restaurant-logo delivery-logo">')
             restaurantLogo.attr('src', results[i].logoUrl)
             // Pulls address for restaurant
             var restaurantAddress = results[i].streetAddress
