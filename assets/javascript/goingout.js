@@ -22,16 +22,16 @@ $(document).ready(function () {
             var zip = data.restaurants[i].postal_code
             var phone = data.restaurants[i].phone
             var reservationLink = data.restaurants[i].mobile_reserve_url
-            var locationInfo = $('<p>').html(name + '<br>' + address + '<br>' + city + ', ' + state + ', ' + zip + '<br>' + phone)
+            var locationInfo = $('<p>').html('<ul style="list-style: none;"><li>' + name + '</li><li>' + address + ', ' + city + ', ' + state + ', ' + zip + '</li><li>' + phone + '</li></ul>')
             var reservationButton = $('<a class="button secondary order-button">').text('Reserve a Table')
+            reservationButton.attr('href', reservationLink)
+            reservationButton.text('Reserve a Table Now')
 
             console.log(restaurantsDiv)
             picContainer.attr('src', photo)
             restaurantsDiv.append(picContainer)
             restaurantsDiv.append(reservationButton)
             restaurantsDiv.append(locationInfo)
-            reservationButton.attr('href', reservationLink)
-            reservationButton.text('Reserve a Table Now')
             $('.restaurant-options').append(restaurantsDiv)
           }
         })
