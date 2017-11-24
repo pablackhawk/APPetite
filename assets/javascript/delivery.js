@@ -31,7 +31,7 @@ $(document).ready(function () {
             // console.log(restaurantDiv)
             var p1 = $('<p>').text(restaurantName)
             // Pulls image for logo
-            var restaurantLogo = $('<img class="restaurant-logo">')
+            var restaurantLogo = $('<img class="restaurant-logo delivery-logo">')
             restaurantLogo.attr('src', results[i].logoUrl)
             // Pulls address for restaurant
             var restaurantAddress = results[i].streetAddress
@@ -83,15 +83,20 @@ $(document).ready(function () {
             var deliveryDetails = $('<p>').text('Delivery Minimum: $' + deliveryMin + ', ' + 'Delivery Fee: $' + deliveryFee)
             var restaurantContact = results[i].phone
             var phoneNumber = $('<p>').text(restaurantContact)
-            restaurantDiv.append(orderButton)
-            restaurantDiv.append(p4)
-            restaurantDiv.append(p1)
-            restaurantDiv.prepend(restaurantLogo)
-            restaurantDiv.append(deliveryDetails)
-            restaurantDiv.append(deliveryTimeframe)
-            restaurantDiv.append(phoneNumber)
-            restaurantDiv.append(p2)
-            restaurantDiv.append(p3)
+            var logoDiv = $('<div class="small-2 columns">')
+            var restaurantInfoDiv = $('<div class="small-10 columns">')
+            restaurantDiv.append(logoDiv)
+            restaurantDiv.append(restaurantInfoDiv)
+            restaurantDiv.append(restaurantInfoDiv)
+            .prepend(orderButton)
+            restaurantInfoDiv.append(p4)
+            restaurantInfoDiv.append(p1)
+            logoDiv.prepend(restaurantLogo)
+            restaurantInfoDiv.append(deliveryDetails)
+            restaurantInfoDiv.append(deliveryTimeframe)
+            restaurantInfoDiv.append(phoneNumber)
+            restaurantInfoDiv.append(p2)
+            restaurantInfoDiv.append(p3)
             $('.restaurant-options').append(restaurantDiv)
             $('#address-input').val('')
           }
