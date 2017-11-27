@@ -73,7 +73,7 @@ $(document).ready(function () {
             var deliveryFee = parseFloat(results[i].deliveryPrice)
             var minWait = results[i].minWaitTime
             var maxWait = results[i].maxWaitTime
-            var deliveryTimeframe = $('<p>').text('Estimated wait time: ' + minWait + '-' + maxWait + 'minutes')
+            var deliveryTimeframe = $('<p>').text('Estimated wait time: ' + minWait + '-' + maxWait + ' minutes')
             var orderLink = results[i].url
             var orderButton = $('<a class="button secondary order-button">').text('Order Here')
             orderButton.attr('href', orderLink)
