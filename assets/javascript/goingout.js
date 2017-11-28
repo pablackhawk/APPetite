@@ -14,7 +14,7 @@ $(document).ready(function () {
 
               for (var i = 0; i < data.restaurants.length; i++) {
                 var restaurantsDiv = $('<div data-aos="flip-left" class="small-12 columns restaurant">')
-                var picContainer = $('<img class="restaurant-logo">')
+                var picContainer = $('<img class="restaurant-logo-dineout">')
                 var photo = data.restaurants[i].image_url
                 var name = data.restaurants[i].name
                 var address = data.restaurants[i].address
