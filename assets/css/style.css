@@ -449,7 +449,23 @@ footer {
   color: #fefefe;
   text-shadow: 1px 1px 2px #0a0a0a;
   margin: 10px 0;
-  
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+.restaurant-logo-dineout {
+  float: left;
+  height: 110px;
+  opacity: 1;
+}
+
+.restaurant-options-dineout {
+  background-color: rgba(54, 54, 54, 0.8);
+  font-family: 'Lobster';
+  text-align: center;
+  color: #fefefe;
+  margin-top: 80px;
+  font-size: 30px;
 }
 
 .restaurant-options {
