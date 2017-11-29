@@ -2,10 +2,10 @@
 	background-image: url("../images/plates.jpeg");
 	height: 100%; 
 	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
-   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  background-attachment: fixed;
 }
 
 header {
@@ -84,8 +84,8 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   overflow: hidden;
   height: 100vh;
   width: 100vw;
@@ -97,11 +97,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -111,8 +111,8 @@ footer {
   right: 0;
   bottom: 0;
   -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
@@ -128,8 +128,8 @@ footer {
   padding: 1rem;
   text-align: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   transition: all 0.2s ease-in;
 }
 
@@ -144,23 +144,23 @@ footer {
 .curtain-menu-wrapper .curtain-menu-list li a {
   color: #fefefe;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .curtain-menu .curtain {
   -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   transition: -webkit-flex 0.45s;
   transition: flex 0.45s;
   transition: flex 0.45s, -webkit-flex 0.45s, -ms-flex 0.45s;
@@ -168,8 +168,8 @@ footer {
 
 .curtain-menu .curtain:nth-child(2) {
   -webkit-flex: 1 0 100%;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
   background: transparent;
 }
 
@@ -209,14 +209,14 @@ footer {
 
 .curtain-menu-button-toggle .bar1 {
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
-      -ms-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
-          transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
 }
 
 .curtain-menu-button-toggle .bar2 {
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(-180deg);
-      -ms-transform: translateX(-50%) translateY(-50%) rotate(-180deg);
-          transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-180deg);
 }
 
 .curtain-menu-button-toggle:hover {
@@ -233,28 +233,28 @@ footer {
 
 .curtain-menu-open .curtain:nth-child(2) {
   -webkit-flex: 0 0 0%;
-      -ms-flex: 0 0 0%;
-          flex: 0 0 0%;
+  -ms-flex: 0 0 0%;
+  flex: 0 0 0%;
 }
 
 .curtain-menu-open .curtain-menu-wrapper {
   -webkit-transform: translateY(0%);
-      -ms-transform: translateY(0%);
-          transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
   visibility: visible;
   pointer-events: all;
 }
 
 .curtain-menu-open .curtain-menu-button-toggle .bar1 {
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
-      -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
-          transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
 }
 
 .curtain-menu-open .curtain-menu-button-toggle .bar2 {
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(-135deg);
-      -ms-transform: translateX(-50%) translateY(-50%) rotate(-135deg);
-          transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-135deg);
 }
 
 
@@ -298,8 +298,8 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-bottom: 1rem;
   border: 0;
   border-radius: 0;
@@ -342,8 +342,8 @@ footer {
 
 .card-user-profile-actions {
   -webkit-flex: 0 1 auto;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
   padding: 1rem;
   background: #e6e6e6;
   background: #fefefe;
@@ -384,8 +384,8 @@ footer {
 .card-user-profile-button {
   margin-bottom: 0;
   -webkit-flex: 1 0 0;
-      -ms-flex: 1 0 0px;
-          flex: 1 0 0;
+  -ms-flex: 1 0 0px;
+  flex: 1 0 0;
 }
 
 .card-user-profile-button + .card-user-profile-button {
@@ -409,11 +409,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .hero-section .hero-section-text {
@@ -470,9 +470,9 @@ footer {
 .restaurant-options {
 	background-color: rgba(54, 54, 54, 0.8);
 	font-family: 'Lobster';
-  	text-align: center;
-  	color: #fefefe;
-  	margin-top: 80px;
+  text-align: center;
+  color: #fefefe;
+  margin-top: 80px;
 }
 
 .order-button {
@@ -485,13 +485,66 @@ footer {
   float: right;
 }
 
-@media screen and (max-width: 375px) {
-    .card-user-profile {
-        position: relative;
-        width: 70%;
-    }
-    footer {
-      text-align: center;
-      position: relative;
-    }
+.push {
+  height: 100px;
+  clear: both;
+}
+
+footer {
+  position: fixed;
+  height: 50px;
+  left: -610px;
+  bottom: -5px;
+  padding: 15px 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 380px) {
+  header {
+    height: 70px;
+    position: relative;
+    left: -50px;
+    top: -10px;
+    width: 430px;
+    padding-top: 10px;
+  }
+  .card-user-profile {
+    position: relative;
+    left: -144px;
+    width: 70%;
+  }
+  .push {
+    height: 50px;
+  }
+  footer {
+    position:relative;
+    left: -600px;
+  }
+  #about-footer {
+    bottom: 385px;
+  }
+  
+  #index-footer {
+    bottom: 160px;
+  } 
+  .translucent-form-overlay {
+    position: relative;
+    left: -462px;
+  }
+  .restaurant {
+    padding-top: 5px;
+  }
+  .restaurant-hours {
+    float: none;
+  }
+  .delivery-logo {
+    height: 100px;
+    width: auto;
+    position: relative;
+    top: -10px;
+    left: 100px;
+  }
+  .restaurant-logo-dineout {
+    margin-top: -40px;
+  }
 }
