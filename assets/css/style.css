@@ -491,6 +491,7 @@ footer {
 }
 
 footer {
+  font-family: "Lobster";
   position: fixed;
   height: 50px;
   left: -610px;
