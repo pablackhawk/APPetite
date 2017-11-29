@@ -264,7 +264,7 @@ footer {
   background-color: rgba(54, 54, 54, 0.8);
   padding: 20px;
   color: #fefefe;
-  margin-left: 465px;
+  margin-left: 850px;
 }
 
 .translucent-form-overlay .columns.row {
@@ -509,35 +509,45 @@ footer {
     width: 430px;
     padding-top: 10px;
   }
+
   .card-user-profile {
     position: relative;
     left: -144px;
     width: 70%;
   }
+
   .push {
     height: 50px;
   }
+
   footer {
     position:relative;
     left: -600px;
+    margin-top: 200px;
   }
+
   #about-footer {
-    bottom: 385px;
-  }
-  
-  #index-footer {
-    bottom: 160px;
-  } 
-  .translucent-form-overlay {
     position: relative;
-    left: -462px;
+    bottom: 250px;
   }
+
+  #index-footer {
+    position: relative;
+    bottom: 50px;
+  } 
+
+  .translucent-form-overlay {
+    margin-left: 5px;
+  }
+
   .restaurant {
     padding-top: 5px;
   }
+
   .restaurant-hours {
     float: none;
   }
+
   .delivery-logo {
     height: 100px;
     width: auto;
@@ -545,6 +555,7 @@ footer {
     top: -10px;
     left: 100px;
   }
+
   .restaurant-logo-dineout {
     margin-top: -40px;
   }
