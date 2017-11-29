@@ -291,7 +291,6 @@ footer {
   color: #8a8a8a;
 }
 
-
 .card-user-profile {
   position: relative;
   z-index: 0;
@@ -484,4 +483,15 @@ footer {
 
 .restaurant-hours {
   float: right;
+}
+
+@media screen and (max-width: 375px) {
+    .card-user-profile {
+        position: relative;
+        width: 70%;
+    }
+    footer {
+      text-align: center;
+      position: relative;
+    }
 }
