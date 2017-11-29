@@ -83,8 +83,8 @@ $(document).ready(function () {
             var deliveryDetails = $('<p>').text('Delivery Minimum: $' + deliveryMin + ', ' + 'Delivery Fee: $' + deliveryFee)
             var restaurantContact = results[i].phone
             var phoneNumber = $('<p>').text(restaurantContact)
-            var logoDiv = $('<div class="small-2 columns">')
-            var restaurantInfoDiv = $('<div class="small-10 columns">')
+            var logoDiv = $('<div class="small-12 medium-2 columns">')
+            var restaurantInfoDiv = $('<div class="small-12 medium-10 columns">')
             restaurantDiv.append(logoDiv)
             restaurantDiv.append(restaurantInfoDiv)
             restaurantDiv.append(restaurantInfoDiv)
