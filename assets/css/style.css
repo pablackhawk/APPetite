@@ -501,9 +501,10 @@ footer {
   width: 100%;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
   header {
     height: 70px;
+    width: 450px;
     position: relative;
     left: -50px;
     top: -10px;
@@ -522,7 +523,7 @@ footer {
   }
 
   footer {
-    width: 400px;
+    width: 450px;
     position:relative;
     left: -600px;
     height: 50px;
@@ -560,7 +561,7 @@ footer {
   }
 
   .restaurant-logo-dineout {
-    margin-top: -40px;
+    margin-top: 40px;
   }
   .curtain-menu-button-toggle {
     position: relative;
