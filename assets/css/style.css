@@ -501,7 +501,7 @@ footer {
   width: 100%;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 380px) {
   header {
     height: 70px;
     width: 450px;
@@ -525,7 +525,8 @@ footer {
   footer {
     width: 450px;
     position:relative;
-    left: -600px;
+    left: -635px;
+    bottom: -30px;
     height: 50px;
     margin-top: 200px;
   }
@@ -533,11 +534,14 @@ footer {
   #about-footer {
     position: relative;
     bottom: 250px;
+    left: -170%;
   }
 
   #index-footer {
+    clear:both;
     position: relative;
-    bottom: -30px;
+    bottom: -95px;
+    left: -168%;
   } 
 
   .translucent-form-overlay {
