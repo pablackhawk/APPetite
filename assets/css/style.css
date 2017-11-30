@@ -504,11 +504,10 @@ footer {
 @media screen and (max-width: 380px) {
   header {
     height: 70px;
-    width: 450px;
     position: relative;
     left: -50px;
     top: -10px;
-    width: 430px;
+    width: 460px;
     padding-top: 15px;
   }
 
